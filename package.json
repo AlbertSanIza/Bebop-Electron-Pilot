@@ -1,0 +1,15 @@
+{
+  "name": "Bebop-Electron-Pilot",
+  "version": "0.0.1",
+  "description": "Computer controlled drone for Robotics Contest",
+  "main": "main.js",
+  "devDependencies": {
+    "cylon": "1.2.0",
+    "node-bebop": "0.4.1"
+  },
+  "license" : "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlbertSanIza/Bebop-Electron-Pilot.git"
+  }
+}

@@ -1,0 +1,59 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-positive">
+    <h1 class="title">My Modal title </h1>
+    <div class="buttons">
+      <button class="button" ng-click="closeModal()">Disconnect</button>
+    </div>
+  </ion-header-bar>
+  <ion-content scroll="false">
+
+    <div class="row">
+      <div class="col col-60" ng-switch="bebop.takeOff">
+        <button class="button button-block button-energized" ng-switch-when="true" ng-click="takeOff()">Take Off</button>
+        <button class="button button-block button-balanced" ng-switch-when="false" ng-click="land()">Land</button>
+      </div>
+      <div class="col">
+        <button class="button button-block button-assertive" ng-click="emergency()">Emergency</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button class="button button-block button-dark" ng-click="up()">Up</button>
+      </div>
+      <div class="col">
+        <button class="button button-block button-dark" ng-click="down()">Down</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button class="button button-block button-dark" ng-click="left()">Left</button>
+      </div>
+      <div class="col">
+        <button class="button button-block button-dark" ng-click="right()">Right</button>
+      </div>
+      <div class="col">
+        <button class="button button-block button-dark" ng-click="forward()">Forward</button>
+      </div>
+      <div class="col">
+        <button class="button button-block button-dark" ng-click="backward()">Backward</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button class="button button-block button-dark" ng-click="clockwise()">Clockwise</button>
+      </div>
+      <div class="col">
+        <button class="button button-block button-dark" ng-click="counterClockwise()">Counter Clockwise</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button class="button button-block button-dark" ng-click="stop()">Stop</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>
